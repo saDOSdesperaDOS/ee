@@ -1,0 +1,13 @@
+*.class
+*.jrtc
+*.info
+*.iml
+*.png
+*.properties
+/.idea/
+/out/
+
+# Package Files #
+*.jar
+*.war
+*.ear
