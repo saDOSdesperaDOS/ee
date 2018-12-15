@@ -57,7 +57,7 @@ public class Note {
         this.id = id;
     }
     public void setTextArea(String textArea) {
-        this.tittle = textArea.substring(0, 10);
+        //this.tittle = textArea.substring(0, 10);
         this.textArea = textArea;
     }
     public void setTittle(String tittle) { this.tittle = tittle;}

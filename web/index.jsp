@@ -9,7 +9,9 @@
     <title>Start Page</title>
   </head>
   <body>
-  <button onclick="location.href='/loadatabase'">Load Database</button>
-  <button onclick="location.href='/add'">Add Note</button>
+  <button onclick="location.href='/loadatabase'">Sign in</button>
+  <button>Greate account</button>
+  <button>Go premium</button>
+
   </body>
 </html>
