@@ -1,3 +1,5 @@
+package entities;
+
 import java.util.Objects;
 
 public class Note {
@@ -9,40 +11,14 @@ public class Note {
 
     public Note() {}
 
-    /*public Note(int id) {this.id = id;*/
-
-
-    public Note(int id, String textArea) {
-        this.id = id;
-        this.textArea = textArea;
-        this.tittle = textArea.substring(0, 5);
-    }
-
-    public Note(String tittle, String textArea) {
-        this.textArea = textArea;
-        this.tittle = tittle;
-    }
-
-    public Note(String textArea) {
-        Model model = Model.getInstance();
-        this.id = model.lenght() + 1;
-        this.textArea = textArea;
-        this.tittle = this.textArea.substring(0, 6);
-    }
-
-    public Note(int id, String tittle, String textArea) {
-        this.id = id;
-        this.tittle = tittle;
-        this.textArea = textArea;
-    }
-
-
     public int getId() {
         return id;
     }
+
     public String getTextArea() {
         return textArea;
     }
+
     public String getTittle() {
         return tittle;
     }
@@ -56,10 +32,12 @@ public class Note {
     public void setId(int id) {
         this.id = id;
     }
+
     public void setTextArea(String textArea) {
         //this.tittle = textArea.substring(0, 10);
         this.textArea = textArea;
     }
+
     public void setTittle(String tittle) { this.tittle = tittle;}
 
     @Override
@@ -71,12 +49,12 @@ public class Note {
     }
     @Override
     public int hashCode() {
-
         return Objects.hash(textArea);
     }
+
     @Override
     public String toString() {
-        return "Note{" +
+        return "entities.Note{" +
                 "textArea='" + textArea + '\'' +
                 '}';
     }

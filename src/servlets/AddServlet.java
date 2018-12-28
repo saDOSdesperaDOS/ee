@@ -1,12 +1,16 @@
+package servlets;
+
+import dao.SqlRequest;
+import entities.Note;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet(name = "AddServlet", urlPatterns = "/add")
+@WebServlet(name = "servlets.AddServlet", urlPatterns = "/add")
 public class AddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String textArea = request.getParameter("textArea");
@@ -22,16 +26,16 @@ public class AddServlet extends HttpServlet {
         response.getWriter().write(
                 " <html>\n" +
                 "<head>\n" +
-                "<title>Add new Note</title>\n" +
+                "<title>Add new entities.Note</title>\n" +
                 "</head>\n" +
                 "\n" +
                   "<body" +
                   "<div>\n" +
-                    "<h2>Add Note</h2>\n" +
+                    "<h2>Add entities.Note</h2>\n" +
                   "</div>\n" +
                   "<div>\n" +
                     "<form method=\"post\">\n" +
-                        "Note:\n" +
+                        "entities.Note:\n" +
                         "<div id=\"body_container\" style=\"width : 500px;height: 300px\">\n" +
                             "<textarea name=\"textArea\"  style=\"height: 250px;\"></textarea>\n" +
                             "<button type=\"submit\">Save</button>\n" +

@@ -1,3 +1,8 @@
+package dao;
+
+import entities.Note;
+import jdbc.ConnectionToDB;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +13,7 @@ public class SqlRequest {
     String SQL_INSERT = "INSERT INTO NotesTable (tittle, textArea) VALUES (?, ?)";
 
     public List<Note> sellectAll(){ // можно было возвратить Map<note.tittle, note.textArea> (типа ключ(tittle) -
-        ConnectionToDB connectionToDB;                  // значение(textArea)), но тогда пришлось переделывать методы Model Add() & Del()
+        ConnectionToDB connectionToDB;                  // значение(textArea)), но тогда пришлось переделывать методы model.Model Add() & Del()
         List<Note> result = new ArrayList<>();
         Statement statement = null;
         ResultSet resultSet = null;

@@ -1,4 +1,4 @@
-<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: mike
@@ -14,9 +14,9 @@
 <body>
     <ul>
     <%
-        for (String tittle: (ArrayList<String>)request.getAttribute("tittleList")) {
+        for (entities.Note note:(List<entities.Note>)request.getAttribute("list")) {
             out.println("<li>");
-            out.println(tittle);
+            out.println("<a href='#'>"+note.getTittle()+"</a> " + "<textarea>" + note.getTittle() + "</textarea>" + " <textarea>" + note.getTextArea() + "</textarea>");
             out.println("</li>");
         }
     %>
