@@ -1,6 +1,6 @@
 package test;
 
-import dao.SqlRequest;
+import controllers.dao.SqlRequest;
 
 import java.sql.SQLException;
 

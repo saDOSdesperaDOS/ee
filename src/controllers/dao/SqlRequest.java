@@ -1,7 +1,7 @@
-package dao;
+package controllers.dao;
 
 import entities.Note;
-import jdbc.ConnectionToDB;
+import controllers.dao.jdbc.ConnectionToDB;
 
 import java.sql.*;
 import java.util.ArrayList;

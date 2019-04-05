@@ -1,6 +1,6 @@
-package servlets;
+package controllers.dao.servlets;
 
-import dao.SqlRequest;
+import controllers.dao.SqlRequest;
 import entities.Note;
 
 import javax.servlet.ServletException;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "servlets.AddServlet", urlPatterns = "/add")
+@WebServlet(name = "controllers.dao.servlets.AddServlet", urlPatterns = "/add")
 public class AddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String textArea = request.getParameter("textArea");

@@ -1,10 +1,10 @@
-package jdbc;
+package controllers.dao.jdbc;
 
 import java.sql.*;
 
 public final class ConnectionToDB {
     // JDBC URL, username and password of MySQL server
-    private static final String url = "jdbc:mysql://localhost:3306/notesDB?useSSL=false";
+    private static final String url = "controllers.dao.jdbc:mysql://localhost:3306/notesDB?useSSL=false";
     private static final String usr = "root";
     private static final String pass = "QwerTyui9988";
     // JDBC variables for opening and managing connection
