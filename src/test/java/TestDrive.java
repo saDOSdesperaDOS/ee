@@ -1,5 +1,3 @@
-package test;
-
 import controllers.dao.SqlRequest;
 
 import java.sql.SQLException;
