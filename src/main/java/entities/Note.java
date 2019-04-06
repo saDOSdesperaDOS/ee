@@ -11,6 +11,10 @@ public class Note {
 
     public Note() {}
 
+    public Note(String textArea) {
+        this.textArea = textArea;
+    }
+
     public int getId() {
         return id;
     }

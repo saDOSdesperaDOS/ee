@@ -1,4 +1,4 @@
-package controllers.dao.servlets;
+package controllers.servlets;
 
 import controllers.dao.SqlRequest;
 import entities.Note;

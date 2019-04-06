@@ -1,4 +1,5 @@
 <%@ page import="java.util.List" %>
+<%@ page import="entities.Note" %>
 <%--
   Created by IntelliJ IDEA.
   User: mike
@@ -14,7 +15,7 @@
 <body>
     <ul>
     <%
-        for (entities.Note note:(List<entities.Note>)request.getAttribute("list")) {
+        for (Note note:(List<Note>)request.getAttribute("list")) {
             out.println("<li>");
             out.println("<a href='#'>"+note.getTittle()+"</a> " + "<textarea>" + note.getTittle() + "</textarea>" + " <textarea>" + note.getTextArea() + "</textarea>");
             out.println("</li>");
